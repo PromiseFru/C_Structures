@@ -51,5 +51,11 @@ int main() {
     strcpy(customer.name, "John");
     customer.account = 5000;
 
+    // print resto
+    printf("Restaurants\n");
+    for(int i = 0; i < 5; i++){
+        printf("name: %s, Address: %s \n", AR[i].name, AR[i].address);
+    }
+
     return 0;
 }
