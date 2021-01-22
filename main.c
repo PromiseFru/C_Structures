@@ -57,5 +57,19 @@ int main() {
         printf("name: %s, Address: %s \n", AR[i].name, AR[i].address);
     }
 
+    // write to file
+    FILE * fp;
+    /* open the file for writing*/
+    fp = fopen ("c:\\temp\\restaurant.txt","w");
+ 
+    /* write 10 lines of text into the file stream*/
+    for(int i = 0; i < 10;i++){
+        fprintf (fp, "Restaurants\n");
+        fprintf (fp, "name: %s, Address: %s \n", AR[i].name, AR[i].address);
+    }
+ 
+   /* close the file*/  
+    fclose (fp);
+
     return 0;
 }
