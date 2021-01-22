@@ -38,5 +38,18 @@ int main() {
 
     // M1
     struct Menu M1;
+    strcpy(M1.name, "Rice");
+    M1.price = 500;
+
+    // M2
+    struct Menu M2;
+    strcpy(M2.name, "Eru");
+    M1.price = 700;
+
+    // customer
+    struct Customer customer;
+    strcpy(customer.name, "John");
+    customer.account = 5000;
+
     return 0;
 }
